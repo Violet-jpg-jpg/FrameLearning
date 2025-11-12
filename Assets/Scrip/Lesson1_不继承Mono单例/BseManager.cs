@@ -6,7 +6,7 @@ using UnityEngine;
 /// 单例模式基类
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public class BaseManager<T> where T : class, new()
+public abstract class BaseManager<T> where T : class, new()
 {
     private static T instance;
     //属性方式
